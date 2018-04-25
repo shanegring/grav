@@ -1,0 +1,21 @@
+email: shane.gring@gmail.com
+fullname: 'Shane Gring'
+title: Admin
+state: enabled
+access:
+  admin:
+    super: 'true'
+    login: 'true'
+  site:
+    login: 'true'
+hashed_password: $2y$10$s8Ad5GtxYYihMJzPrsmjyOGWAFORjUnxNr9nX7ev2raqy6yAJC072
+authorized: true
+twofa_secret: 6NDILQSYW3T3VIUD5X25AEI3A4C6AA33
+language: en
+twofa_enabled: false
+avatar:
+  user/accounts/avatars/ith19gXq48pkARv.jpg:
+    name: ith19gXq48pkARv.jpg
+    type: image/jpeg
+    size: 10883
+    path: user/accounts/avatars/ith19gXq48pkARv.jpg
