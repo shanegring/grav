@@ -2,9 +2,9 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/shanegring/GitHub/blog/user/config/site.yaml',
-    'modified' => 1524665797,
+    'modified' => 1525272765,
     'data' => [
-        'title' => 'WELL Designed',
+        'title' => 'W',
         'author' => [
             'name' => 'Shane Gring',
             'email' => 'joe@test.com'

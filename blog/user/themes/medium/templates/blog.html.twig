@@ -1,3 +1,16 @@
+
+<style>
+.top-bar {
+display: none;
+}
+
+@media (max-width: 800px) {
+    top-bar {
+display: block;
+}
+}
+</style>
+
 {% embed 'partials/base.html.twig' %}
 
     {% set collection = page.collection %}

@@ -10,7 +10,7 @@ access:
     login: 'true'
 hashed_password: $2y$10$s8Ad5GtxYYihMJzPrsmjyOGWAFORjUnxNr9nX7ev2raqy6yAJC072
 authorized: true
-twofa_secret: 6NDILQSYW3T3VIUD5X25AEI3A4C6AA33
+twofa_secret: IR25IQW5CIFYFD3RXCDSRCLSOYK442R2
 language: en
 twofa_enabled: false
 avatar:
@@ -19,3 +19,4 @@ avatar:
     type: image/jpeg
     size: 10883
     path: user/accounts/avatars/ith19gXq48pkARv.jpg
+login_attempts: {  }

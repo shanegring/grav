@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/shanegring/GitHub/blog/user/themes/medium/blueprints.yaml',
-    'modified' => 1524662875,
+    'modified' => 1524667149,
     'data' => [
         'name' => 'Medium',
         'version' => '2.0.5',
@@ -56,7 +56,7 @@ return [
                     'type' => 'text',
                     'size' => 'medium',
                     'label' => 'Twitter',
-                    'default' => '@mblode',
+                    'default' => '@shanegring',
                     'validate' => [
                         'type' => 'text'
                     ]

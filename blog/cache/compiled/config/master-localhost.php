@@ -1,13 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1524667997,
-    'checksum' => 'b72db3bd444c1785138bcfa70a1ea6bd',
+    'timestamp' => 1525981221,
+    'checksum' => '75fdd1d987feb5b4ef20cd508e24c7b5',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1524663237
+            ],
+            'plugins/simplesearch' => [
+                'file' => 'user/config/plugins/simplesearch.yaml',
+                'modified' => 1525271668
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -15,7 +19,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1524665797
+                'modified' => 1525272765
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -23,7 +27,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1524662973
+                'modified' => 1525271440
             ],
             'themes/medium' => [
                 'file' => 'user/config/themes/medium.yaml',
@@ -53,17 +57,37 @@ return [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
                 'modified' => 1523548642
             ],
+            'plugins/users-page-ownership' => [
+                'file' => 'user/plugins/users-page-ownership/users-page-ownership.yaml',
+                'modified' => 1525981108
+            ],
+            'plugins/pagination' => [
+                'file' => 'user/plugins/pagination/pagination.yaml',
+                'modified' => 1519013638
+            ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1523548644
+                'modified' => 1525981217
+            ],
+            'plugins/simplesearch' => [
+                'file' => 'user/plugins/simplesearch/simplesearch.yaml',
+                'modified' => 1525271396
             ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
                 'modified' => 1523548644
             ],
+            'plugins/admin-addon-user-manager' => [
+                'file' => 'user/plugins/admin-addon-user-manager/admin-addon-user-manager.yaml',
+                'modified' => 1525981220
+            ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
                 'modified' => 1523548642
+            ],
+            'plugins/archives' => [
+                'file' => 'user/plugins/archives/archives.yaml',
+                'modified' => 1525271440
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
@@ -76,6 +100,10 @@ return [
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
                 'modified' => 1523548644
+            ],
+            'plugins/taxonomylist' => [
+                'file' => 'user/plugins/taxonomylist/taxonomylist.yaml',
+                'modified' => 1525271369
             ]
         ]
     ],
@@ -90,6 +118,14 @@ return [
                     2 => 'blue',
                     3 => 'green'
                 ]
+            ],
+            'users-page-ownership' => [
+                'enabled' => true
+            ],
+            'pagination' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'delta' => 0
             ],
             'form' => [
                 'enabled' => true,
@@ -108,6 +144,25 @@ return [
                     'accept' => [
                         0 => 'image/*'
                     ]
+                ]
+            ],
+            'simplesearch' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'built_in_js' => true,
+                'display_button' => false,
+                'min_query_length' => 3,
+                'route' => '/search',
+                'search_content' => 'rendered',
+                'template' => 'simplesearch_results',
+                'filters' => [
+                    'category' => 'blog'
+                ],
+                'filter_combinator' => 'and',
+                'ignore_accented_characters' => false,
+                'order' => [
+                    'by' => 'date',
+                    'dir' => 'desc'
                 ]
             ],
             'admin' => [
@@ -169,9 +224,35 @@ return [
                     ]
                 ]
             ],
+            'admin-addon-user-manager' => [
+                'enabled' => true,
+                'default_list_style' => 'list',
+                'pagination' => [
+                    'per_page' => 20
+                ]
+            ],
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
+            ],
+            'archives' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'date_display_format' => 'F Y',
+                'show_count' => true,
+                'limit' => 12,
+                'order' => [
+                    'by' => 'date',
+                    'dir' => 'desc'
+                ],
+                'filter_combinator' => 'and',
+                'filters' => [
+                    'category' => 'blog'
+                ],
+                'taxonomy_names' => [
+                    'month' => 'archives_month',
+                    'year' => 'archives_year'
+                ]
             ],
             'error' => [
                 'enabled' => true,
@@ -254,6 +335,10 @@ return [
                 ],
                 'content_type' => 'text/html',
                 'debug' => false
+            ],
+            'taxonomylist' => [
+                'enabled' => true,
+                'route' => '/blog'
             ]
         ],
         'media' => [
@@ -523,7 +608,7 @@ return [
             ]
         ],
         'site' => [
-            'title' => 'WELL Designed',
+            'title' => 'W',
             'default_lang' => 'en',
             'author' => [
                 'name' => 'Shane Gring',

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/shanegring/GitHub/blog/user/plugins/form/languages.yaml',
-    'modified' => 1523548644,
+    'modified' => 1525981217,
     'data' => [
         'en' => [
             'PLUGIN_FORM' => [
