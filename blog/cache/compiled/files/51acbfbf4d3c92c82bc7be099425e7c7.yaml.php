@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/shanegring/GitHub/blog/system/languages/hu.yaml',
-    'modified' => 1523548642,
+    'modified' => 1528828629,
     'data' => [
         'FRONTMATTER_ERROR_PAGE' => '---
 cím: %1$s
